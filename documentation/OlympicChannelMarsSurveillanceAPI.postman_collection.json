@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "fee0f6be-24c7-4ee8-a85f-6383767dfcf0",
+		"name": "OlympicChannelMarsSurveillanceAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2298342"
+	},
+	"item": [
+		{
+			"name": "marsRemoteControl",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"terrain\": [\n        [\n            \"Fe\",\n            \"Fe\",\n            \"Se\"\n        ],\n        [\n            \"W\",\n            \"Si\",\n            \"Obs\"\n        ],\n        [\n            \"W\",\n            \"Obs\",\n            \"Zn\"\n        ]\n    ],\n    \"battery\": 50,\n    \"commands\": [\n        \"F\",\n        \"S\",\n        \"R\",\n        \"F\",\n        \"S\",\n        \"R\",\n        \"F\",\n        \"L\",\n        \"F\",\n        \"S\"\n    ],\n    \"initialPosition\": {\n        \"location\": {\n            \"x\": 0,\n            \"y\": 0\n        },\n        \"facing\": \"East\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/remotecontrol",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"remotecontrol"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "API-Key",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "2agp59nwu8nrszm4p6kfriekoeo0s1",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "http://localhost:4142",
+			"type": "string"
+		}
+	]
+}
