@@ -29,9 +29,9 @@ The intellisence should show you all the references that are being used in the p
 
 # Prerequisites
 
--Install Node.js and NPM more information [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
--Install VSCode more information [here](https://code.visualstudio.com/download)
--Install Posrman more information [here](https://www.postman.com/downloads/)
+- Install Node.js and NPM more information [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+- Install VSCode more information [here](https://code.visualstudio.com/download)
+- Install Posrman more information [here](https://www.postman.com/downloads/)
 
 # Who to use it - Node area
 
