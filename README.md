@@ -2,11 +2,36 @@
 
 # _OlympicChannelMarsSurveillanceAPI_
 
+# Introduction
+
+For this API we have chosen to implement a VIP architecture (View Interactor Presenter) using Node.js as development language and Express as server.
+
+In order to test the API we will use Postman.
+
+We have decided for the way Express works, that the View layer is where, all the enpoints that this API can have are going to be declared.
+
+In the Presenter layer we have developed the business logic of the API.
+
+And although the code for the Interactor layer is ready, in this project for now we see it unnecessary.
+
+Also, we have created base classes for the Node libraries that will be used in the project, as well as bases for View, Interactor and Presenter.
+
+The idea of these base classes is to organize the programmers' minds so that they always think in the sense of the architecture, so that the code that different programmers make always has the same base, for example: if they need a something they should write a dot sentence
+
+```sh
+presenter.
+interactor.
+library.
+etc...
+```
+
+The intellisence should show you all the references that are being used in the project, which will generate a uniform code base for all programmers.
+
 # Prerequisites
 
-- Install Node.js and NPM more information [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-- Install VSCode more information [here](https://code.visualstudio.com/download)
-- Install Posrman more information [here](https://www.postman.com/downloads/)
+-Install Node.js and NPM more information [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+-Install VSCode more information [here](https://code.visualstudio.com/download)
+-Install Posrman more information [here](https://www.postman.com/downloads/)
 
 # Who to use it - Node area
 
