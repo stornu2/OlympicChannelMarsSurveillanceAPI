@@ -2,7 +2,7 @@
 
 class marsRemoteControls {
     /**
-     * Function getCountDownTwoOptions: in charge of adding counter back for number of attempts
+     * Function marsRemoteControls: responsible for processing the input JSON with the necessary information to perform the Rover movements.
      * @param {JSON} req
      * @param {JSON} res
      */
