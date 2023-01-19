@@ -2,12 +2,13 @@
 	"info": {
 		"_postman_id": "fee0f6be-24c7-4ee8-a85f-6383767dfcf0",
 		"name": "OlympicChannelMarsSurveillanceAPI",
+		"description": "This is a Postman collection intended to test the code of the Olympic Channel Backend test.\n\nThe collection is divided in two post calls (MarsRemoteControl Test 1 and MarsRemoteControl Test 2), each call has in the BODY the JSON to be processed.\n\nThe API implements a basic API-Key security that is found in the security variables of the collection.\n\nIn addition we are using the environment variables of the collection since for this test we do not see necessary also to create different Postman environments.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "2298342"
 	},
 	"item": [
 		{
-			"name": "marsRemoteControl",
+			"name": "MarsRemoteControl Test 1",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -28,7 +29,35 @@
 					"path": [
 						"remotecontrol"
 					]
-				}
+				},
+				"description": "POST method to invoke the API with test 1 of the problem provided by the Olympic Channel."
+			},
+			"response": []
+		},
+		{
+			"name": "MarsRemoteControl Test 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"terrain\": [\n        [\n            \"Fe\",\n            \"Fe\",\n            \"Se\"\n        ],\n        [\n            \"W\",\n            \"Si\",\n            \"Obs\"\n        ],\n        [\n            \"W\",\n            \"Obs\",\n            \"Zn\"\n        ]\n    ],\n    \"battery\": 50,\n    \"commands\": [\n        \"S\",\n        \"F\",\n        \"S\",\n        \"R\",\n        \"F\",\n        \"S\",\n        \"F\",\n        \"S\"\n    ],\n    \"initialPosition\": {\n        \"location\": {\n            \"x\": 0,\n            \"y\": 0\n        },\n        \"facing\": \"East\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/remotecontrol",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"remotecontrol"
+					]
+				},
+				"description": "POST method to invoke the API with test 2 of the problem provided by the Olympic Channel."
 			},
 			"response": []
 		}

@@ -1,7 +1,5 @@
 'use strict';
 
-const libraries = require('../base/libraries');
-
 class marsRemoteControls {
     /**
      * Function getCountDownTwoOptions: in charge of adding counter back for number of attempts
@@ -10,6 +8,7 @@ class marsRemoteControls {
      */
     static async example(req, res) {
         try {
+            console.log('Started example');
             res.setHeader('Content-Type', 'application/json');
             const option = {
                 "VisitedCells": [
@@ -48,6 +47,7 @@ class marsRemoteControls {
                     "Facing": "South"
                 }
             }
+            console.log('Ended example');
             res.send(option);
             return null;
         } catch (err) { // Error
