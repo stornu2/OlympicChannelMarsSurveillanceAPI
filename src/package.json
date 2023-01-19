@@ -4,7 +4,8 @@
   "description": "Olympic Channel development department test as part of the Backend Developer",
   "main": "index.js",
   "scripts": {
-    "start": "node obeIndex.js"
+    "start": "dotenv-run-script ../.env -- node",
+    "node": "node obeIndex.js"
   },
   "author": "Marco Antonio Uzcategui Pescozo",
   "license": "MIT",
@@ -12,5 +13,8 @@
     "body-parser": "^1.20.1",
     "dotenv": "^16.0.3",
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "dotenv-run-script": "^0.2.0"
   }
 }
