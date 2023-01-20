@@ -2,7 +2,6 @@
 
 // VIP constants.
 const interactor = require('../base/interactor');
-const obdClass = require('../classes/class');
 
 class marsRemoteControls {
     /**
