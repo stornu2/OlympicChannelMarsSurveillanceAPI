@@ -84,7 +84,7 @@ You can find more information on how to use Postman [here](https://learning.post
 
 We have added some security and environment control.
 
-So for everything to work correctly you will need to generate an .env file.
+So for everything to work correctly you will need to generate an .env file (in the same folder you have de .gitnore or de readme).
 
 In which you will need 2 variables:
 
