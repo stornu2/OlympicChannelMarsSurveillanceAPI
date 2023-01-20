@@ -34,7 +34,7 @@ expressServer.use((req, res, next) => {
 })
 
 // Set the routes.
-expressServer.use('', view.obdRoutes);
+expressServer.use('', view.obdRoutesView);
 
 // Start the server.
 const server = expressServer.listen(process.env.PORT, (error) => {

@@ -12,7 +12,7 @@ We have decided for the way Express works, that the View layer is where, all the
 
 In the Presenter layer we have developed the business logic of the API.
 
-And although the code for the Interactor layer is ready, in this project for now we see it unnecessary.
+The Interactor layer will be in charge of processing the data from the API request and generating the final result that will be returned.
 
 Also, we have created base classes for the Node libraries that will be used in the project, as well as bases for View, Interactor and Presenter.
 
@@ -80,3 +80,19 @@ Collection variables have been used in Postman, to improve the scalability of th
 
 You can find more information on how to use Postman [here](https://learning.postman.com/docs/getting-started/introduction/) 
 
+# Who to use it - Enviroments
+
+We have added some security and environment control.
+
+So for everything to work correctly you will need to generate an .env file.
+
+In which you will need 2 variables:
+
+```sh
+PORT = Any port you want
+API_KEY = 'Any API Key you want'.
+```
+
+You can find the ones we use in the Postman Collection configuration variables.
+
+If you don't want to use the ones we use, remember to change them on both sides (Postman and .env).
